@@ -79,8 +79,11 @@ const handleNav = (section) =>{
 const handleScrollNav = (fromTop) =>{
     sections.forEach(section => {
         let searchS = document.getElementById(section);
+        console.log(`offsetTop  ${searchS.getAttribute('id')}  ${searchS.offsetTop}`);
+        console.log("fromTop", fromTop);
+        console.log(searchS.offsetTop + searchS.offsetHeight);
         if(searchS.offsetTop <= fromTop && 
-            searchS.offsetTop + searchS.offsetHeight > fromTop){
+            (searchS.offsetTop + searchS.offsetHeight) - 100 > fromTop){
             handleNav(section);
         }
     })
