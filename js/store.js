@@ -31,7 +31,7 @@ const galery = [
         img: './img/web-design6.png',
         title: 'Web Design',
         category: 'front',
-        link: 'https://juancarlos008.github.io/tutube/'
+        link: 'https://juancarlos008.github.io/TUTUBE/'
     }
 ]
 
