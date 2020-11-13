@@ -38,7 +38,7 @@ const galery = [
         img: './img/other4.png',
         title: 'Other',
         category: 'other',
-        link: 'https://juancarlos008.github.io/CardPrice/'
+        link: 'https://juancarlos008.github.io/VisorGaleria/'
     }
 ]
 
