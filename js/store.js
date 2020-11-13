@@ -32,6 +32,13 @@ const galery = [
         title: 'Web Design',
         category: 'front',
         link: 'https://juancarlos008.github.io/TUTUBE/'
+    },
+
+    {
+        img: './img/other4.png',
+        title: 'Other',
+        category: 'other',
+        link: 'https://juancarlos008.github.io/CardPrice/'
     }
 ]
 

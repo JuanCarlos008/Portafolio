@@ -416,7 +416,7 @@ a{
 
 .grid-web-design::before{
     position: absolute;
-    content: 'Web Design';
+    content: 'Fron-End';
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,.7);
@@ -474,7 +474,7 @@ a{
 
 .grid-apis::before{
     position: absolute;
-    content: 'BackEnd';
+    content: 'Back-End';
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,.7);
