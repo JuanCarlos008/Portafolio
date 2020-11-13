@@ -1,34 +1,34 @@
 const galery = [
     {
-        img: './img/api.JPG',
+        img: './img/api.jpg',
         title: 'Api',
         category: 'api',
         link: ''
     },
 
     {
-        img: './img/api.JPG',
+        img: './img/api.jpg',
         title: 'Api',
         category: 'api',
         link: ''
     },
 
     {
-        img: './img/web-design4.PNG',
+        img: './img/web-design4.png',
         title: 'Web Design',
         category: 'front',
         link: 'https://juancarlos008.github.io/Dashboard/'
     },
 
     {
-        img: './img/web-design5.PNG',
+        img: './img/web-design5.png',
         title: 'Web Design',
         category: 'front',
         link: 'https://juancarlos008.github.io/Portafolio-Practica/'
     },
 
     {
-        img: './img/web-design6.PNG',
+        img: './img/web-design6.png',
         title: 'Web Design',
         category: 'front',
         link: 'https://juancarlos008.github.io/tutube/'
