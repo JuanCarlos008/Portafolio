@@ -21,16 +21,22 @@ gridWork.addEventListener('click', (e) =>{
         galery.forEach((galeryImg) => {
             if(galeryImg.category === dt){
                 const $img = document.createElement('img'),
+                    $a = document.createElement('a'),
                     $figure = document.createElement('figure'),
                     $figcaption = document.createElement('figcaption'),
                     $text = document.createTextNode(galeryImg.title);
 
                     $img.setAttribute('src', galeryImg.img);
                     $img.setAttribute('alt', galeryImg.title);
+
+                    $a.setAttribute('href', galeryImg.link);
+                    $a.setAttribute('target', '_blank');
+                    $a.appendChild($img);
+
                     $figcaption.appendChild($text);
 
                     $figure.classList.add('item-visor');
-                    $figure.appendChild($img);
+                    $figure.appendChild($a);
                     $figure.appendChild($figcaption);
 
                     $fragment.appendChild($figure);
@@ -79,11 +85,8 @@ const handleNav = (section) =>{
 const handleScrollNav = (fromTop) =>{
     sections.forEach(section => {
         let searchS = document.getElementById(section);
-        console.log(`offsetTop  ${searchS.getAttribute('id')}  ${searchS.offsetTop}`);
-        console.log("fromTop", fromTop);
-        console.log(searchS.offsetTop + searchS.offsetHeight);
         if(searchS.offsetTop <= fromTop && 
-            (searchS.offsetTop + searchS.offsetHeight) - 100 > fromTop){
+            searchS.offsetTop + searchS.offsetHeight > fromTop){
             handleNav(section);
         }
     })
