@@ -36,7 +36,7 @@ export default function handleWorksView(gridWork, visorContainer, visor, hamburg
                 }
             })
             $visor.appendChild($fragment);
-            $visorContainer.classList.add('show')
+            if($visor.innerHTML !== '') $visorContainer.classList.add('show');
         }
     
     })
@@ -45,7 +45,7 @@ export default function handleWorksView(gridWork, visorContainer, visor, hamburg
     $d.addEventListener('click', e =>{
         if(e.target.matches(hamburgerVisor)){
             $visorContainer.classList.remove('show');
-            $visorImg.innerHTML = '';
+            $visor.innerHTML = '';
         }
     })
 

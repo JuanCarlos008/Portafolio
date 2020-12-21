@@ -624,6 +624,7 @@ a{
     height: 5px;
     margin: 5px 0;
     border-radius: 1px;
+    pointer-events: none;
 }
 
 .hamburger-visor .div1{
@@ -661,7 +662,7 @@ a{
 .grid-socials{
     margin-top: 30px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 0 40px;
 }
 
@@ -813,6 +814,11 @@ a{
 
     .visor{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hamburger-visor{
+        top: 15px;
+        right: 15px;
     }
 } 
 
