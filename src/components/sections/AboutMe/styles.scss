@@ -1,0 +1,16 @@
+.about {
+	&__wrapper {
+		min-height: 100vh;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		gap: 50px;
+	}
+
+	&__info {
+		width: 100%;
+		columns: 350px auto;
+		text-align: justify;
+		margin-bottom: 50px;
+	}
+}

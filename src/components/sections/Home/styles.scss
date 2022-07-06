@@ -1,0 +1,107 @@
+.home {
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "img content";
+		gap: 50px;
+		height: 100%;
+
+		@media screen and (max-width: 768px) {
+			grid-template-columns: 1fr;
+			grid-template-areas:
+				"content"
+				"img";
+		}
+	}
+
+	&__img {
+		grid-area: img;
+		width: 100%;
+		height: 100%;
+		display: flex;
+
+		@media screen and (max-width: 768px) {
+			justify-content: flex-end;
+		}
+
+		&__box {
+			position: relative;
+			width: clamp(200px, 30vw, 450px);
+			height: 100%;
+
+			img {
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				position: absolute;
+				object-fit: contain;
+				z-index: 1;
+			}
+		}
+	}
+
+	&__content {
+		grid-area: content;
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		justify-content: center;
+		color: var(--secondary-text-color);
+
+		&__welcome {
+			line-height: 1.2;
+			.title {
+				font-size: clamp(2.5rem, 3vw, 4.5rem);
+				font-family: var(--fontCodeLatin);
+				text-transform: uppercase;
+
+				.guess-name {
+					font-family: var(--fontNextDoor);
+					font-size: clamp(1.5rem, 3vw, 3rem);
+					text-decoration: line-through;
+					line-height: 0;
+					color: var(--primary-text-color);
+				}
+			}
+		}
+
+		&__introduction {
+			line-height: 1.3;
+			color: var(--primary-text-color);
+		}
+
+		&__buttons {
+			display: flex;
+			gap: 20px;
+
+			.button {
+				padding: 10px 28px;
+				text-align: center;
+				text-transform: uppercase;
+				display: flex;
+				align-items: center;
+				gap: 5px;
+				border-radius: 10px;
+				font-size: 0.8rem;
+				transition: all ease 0.3s;
+
+				&:hover {
+					transform: scale(0.9);
+				}
+
+				svg {
+					width: 1.5rem;
+					height: 1.5rem;
+				}
+
+				&--github {
+					background: #222222;
+				}
+
+				&--linkedin {
+					background: #046fa1;
+				}
+			}
+		}
+	}
+}

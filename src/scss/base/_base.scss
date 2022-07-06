@@ -1,0 +1,37 @@
+html,
+body {
+	font-family: var(--fontQuickSand);
+	color: var(--primary-text-color);
+	font-size: 16px;
+	background-color: var(--primary-color);
+}
+
+.section {
+	height: 100vh;
+	padding-top: 100px;
+	width: 100%;
+
+	.section-title {
+		display: inline-block;
+		position: relative;
+		font-family: var(--fontCodeLatin);
+		font-size: clamp(2rem, 5vw, 5rem);
+		width: max-content;
+		color: var(--secondary-text-color);
+
+		&::before {
+			position: absolute;
+			content: "";
+			width: 200px;
+			right: -230px;
+			top: 55%;
+			transform: translateY(-50%);
+			height: clamp(2px, 3vw, 7px);
+			background-color: var(--secondary-color);
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		padding-top: 50px;
+	}
+}
