@@ -9,23 +9,36 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		overflow-x: hidden;
+		// overflow-x: hidden;
 
 		.circle {
 			position: absolute;
 			border-radius: 50%;
 			filter: blur(200px);
-			width: clamp(280px, 60vw, 420px);
-			height: clamp(280px, 60vw, 420px);
+			width: clamp(180px, 60vw, 620px);
+			height: clamp(180px, 60vw, 620px);
 			&--1 {
-				top: -15%;
-				left: -15%;
+				top: -20%;
+				left: -20%;
 				background-color: var(--tertiary-color);
 			}
 			&--2 {
-				right: -10%;
-				bottom: -10%;
-				background-color: var(--red-color);
+				right: -20%;
+				bottom: -20%;
+				background-color: var(--quertiary-color);
+			}
+		}
+
+		@media screen and (max-width: 768px) {
+			.circle {
+				&--1 {
+					top: -15%;
+					left: -15%;
+				}
+				&--2 {
+					right: -15%;
+					bottom: -15%;
+				}
 			}
 		}
 	}

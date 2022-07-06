@@ -4,8 +4,8 @@ import "./styles.scss";
 
 export const AboutSection = () => {
 	return (
-		<MaxContainer>
-			<div className='about section'>
+		<div className='about section'>
+			<MaxContainer>
 				<div className='about__wrapper'>
 					<h2 className='section-title'>Mí</h2>
 
@@ -32,7 +32,7 @@ export const AboutSection = () => {
 						</p>
 					</div>
 				</div>
-			</div>
-		</MaxContainer>
+			</MaxContainer>
+		</div>
 	);
 };

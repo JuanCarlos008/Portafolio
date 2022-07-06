@@ -10,8 +10,16 @@ export const HomeSection = () => {
 				<div className='home__wrapper'>
 					<div className='home__img'>
 						<div className='home__img__box'>
-							<img src='/assets/images/line.png' alt='line image' />
-							<img src='/assets/images/jc.png' alt='jc image' />
+							<img
+								className='img-line'
+								src='/assets/images/line.png'
+								alt='line image'
+							/>
+							<img
+								className='img-profile'
+								src='/assets/images/jc.png'
+								alt='jc image'
+							/>
 						</div>
 					</div>
 					<div className='home__content'>

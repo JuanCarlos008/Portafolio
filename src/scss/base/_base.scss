@@ -4,20 +4,19 @@ body {
 	color: var(--primary-text-color);
 	font-size: 16px;
 	background-color: var(--primary-color);
+	overflow-x: hidden;
 }
-
 .section {
 	height: 100vh;
-	padding-top: 100px;
 	width: 100%;
 
 	.section-title {
 		display: inline-block;
 		position: relative;
 		font-family: var(--fontCodeLatin);
-		font-size: clamp(2rem, 5vw, 5rem);
+		font-size: clamp(2.5rem, 3vw, 4.5rem);
 		width: max-content;
-		color: var(--secondary-text-color);
+		color: var(--quertiary-text-color);
 
 		&::before {
 			position: absolute;
