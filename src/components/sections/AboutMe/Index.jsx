@@ -7,7 +7,7 @@ export const AboutSection = () => {
 		<div className='about section'>
 			<MaxContainer>
 				<div className='about__wrapper'>
-					<h2 className='section-title'>Mí</h2>
+					<h2 className='section-title'>Sobre Mí</h2>
 
 					<div className='about__info'>
 						<p>

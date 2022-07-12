@@ -1,6 +1,7 @@
 .about {
 	&__wrapper {
-		min-height: 100vh;
+		height: 100vh;
+		max-height: 500px;
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
@@ -9,8 +10,8 @@
 
 	&__info {
 		width: 100%;
-		columns: 350px auto;
-		text-align: justify;
+		columns: 350px 2;
 		margin-bottom: 50px;
+		font-size: var(--p-font-size);
 	}
 }

@@ -1,9 +1,9 @@
 import React from "react";
 import "./styles.scss";
 
-export const Background = ({ children, classN }) => {
+export const BlurCircles = ({ children, classN }) => {
 	return (
-		<div className={`bg ${classN ? classN : ""}`}>
+		<div className='blur-circler'>
 			{children}
 
 			<div className='floating-elements'>

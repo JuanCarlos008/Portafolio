@@ -3,52 +3,20 @@
 	position: fixed;
 	top: 0;
 	z-index: 5;
+	transition: background-color 0.3s ease;
 
 	&.isScrolling {
-		backdrop-filter: blur(50px);
+		// backdrop-filter: blur(10px);
+		background-color: var(--primary-color);
+
+		.nav {
+			padding: 10px 0;
+		}
 	}
 
-	@media screen and (max-width: 768px) {
-		// display: none;
-		&.isActive {
-			backdrop-filter: blur(50px);
-			height: 100vh;
-
-			.nav__navigation,
-			.nav__cv {
-				display: initial;
-			}
-		}
-		.nav {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			height: 100%;
-
-			&__brand {
-				align-self: flex-start;
-				width: 50px;
-				height: 50px;
-				font-size: 1.5rem;
-			}
-
-			&__navigation {
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				font-size: 2rem;
-				position: fixed;
-				top: 0;
-				right: 0;
-				width: 100%;
-				height: 100vh;
-				display: none;
-			}
-
-			&__cv {
-				display: none;
-			}
-		}
+	.wrapper-togle-cv {
+		display: flex;
+		gap: 20px;
 	}
 }
 
@@ -61,18 +29,19 @@
 	text-transform: capitalize;
 	font-size: 1rem;
 	width: 100%;
+	transition: padding 0.3s ease;
 
 	&__brand {
-		width: 70px;
-		height: 70px;
-		border-radius: 100%;
-		background-color: var(--tertiary-color);
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		font-size: 2rem;
 		text-transform: uppercase;
 		font-family: var(--fontCodeLatin);
+
+		span {
+			color: var(--quertiary-text-color);
+		}
 	}
 
 	&__navigation {
@@ -107,8 +76,71 @@
 
 	&__cv {
 		padding: 10px 28px;
-		background-color: var(--quertiary-color);
+		background-image: linear-gradient(
+			to right,
+			var(--tertiary-color),
+			var(--quertiary-color)
+		);
 		border-radius: 10px;
 		color: var(--tertiary-text-color);
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		transition: all ease 0.3s;
+
+		&:hover {
+			transform: scale(0.9);
+		}
+		span {
+			filter: invert(1);
+			font-size: 1rem;
+
+			&.icon-down {
+				display: none;
+			}
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		display: flex;
+
+		&__brand {
+			align-self: flex-start;
+			font-size: 1.5rem;
+			z-index: 1;
+			justify-self: flex-start;
+		}
+
+		&__navigation {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			font-size: 2rem;
+			position: fixed;
+			top: 0;
+			right: 0;
+			width: 100%;
+			height: 100vh;
+			transform: translateX(100%);
+			transition: all 0.5s ease-in-out;
+
+			&.isActive {
+				backdrop-filter: blur(50px);
+				transform: translateX(0);
+			}
+		}
+
+		&__cv {
+			z-index: 1;
+
+			span {
+				&.icon-down {
+					display: initial;
+				}
+				&.literal-down {
+					display: none;
+				}
+			}
+		}
 	}
 }

@@ -1,0 +1,45 @@
+.services {
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		gap: 50px;
+	}
+
+	&__info {
+		width: 100%;
+		columns: 350px 2;
+		margin-bottom: 50px;
+		font-size: var(--p-font-size);
+	}
+}
+
+.service-cards-wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	gap: 50px;
+
+	@media screen and (max-width: 768px) {
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	}
+}
+
+.service-card {
+	display: flex;
+	gap: 15px;
+
+	&__icon {
+		svg {
+			font-size: 2rem;
+			color: var(--quertiary-color);
+		}
+	}
+	&__content {
+		.content-title {
+			font-size: var(--title-font-size);
+			color: var(--primary-text-color);
+			line-height: 1;
+			margin-bottom: 10px;
+		}
+	}
+}
