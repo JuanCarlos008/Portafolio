@@ -7,7 +7,7 @@ export const ServiceCards = () => {
 		<div className='services section'>
 			<MaxContainer>
 				<div className='services__wrapper'>
-					<h2 className='section-title'>Que ofrezco?</h2>
+					<h2 className='section-title'>¿Qué ofrezco?</h2>
 					<div className='service-cards-wrapper'>
 						<ServiceCard />
 						<ServiceCard />

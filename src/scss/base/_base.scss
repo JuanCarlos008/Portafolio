@@ -7,10 +7,15 @@ body {
 	color: var(--primary-text-color);
 	font-size: 16px;
 	background-color: var(--primary-color);
+	position: relative;
+}
+
+body {
+	overflow-x: hidden;
 }
 
 .app-wrapper {
-	overflow-x: hidden;
+	position: relative;
 	min-height: 100vh;
 }
 
