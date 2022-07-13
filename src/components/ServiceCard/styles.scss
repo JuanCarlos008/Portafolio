@@ -1,5 +1,6 @@
 .services {
 	&__wrapper {
+		width: 100%;
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
@@ -7,7 +8,6 @@
 	}
 
 	&__info {
-		width: 100%;
 		columns: 350px 2;
 		margin-bottom: 50px;
 		font-size: var(--p-font-size);
@@ -16,11 +16,11 @@
 
 .service-cards-wrapper {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 	gap: 50px;
 
 	@media screen and (max-width: 768px) {
-		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	}
 }
 
