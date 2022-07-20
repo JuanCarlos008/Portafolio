@@ -1,0 +1,13 @@
+.skill-icon {
+	opacity: 0.5;
+	width: clamp(70px, 20vw, 100px);
+	height: clamp(70px, 20vw, 100px);
+	transition: all ease 0.3s;
+
+	&:hover {
+		opacity: 1;
+	}
+	path: {
+		fill: var(--primary-text-color);
+	}
+}

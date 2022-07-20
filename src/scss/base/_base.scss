@@ -11,19 +11,19 @@ body {
 
 body {
 	position: relative;
-	width: 100%;
-	overflow-x: hidden;
 }
 
 .app-wrapper {
 	position: relative;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 .section {
 	position: relative;
 	min-height: 1px;
 	width: 100%;
-	margin-bottom: 100px;
+	margin-bottom: 150px;
 	.section-title {
 		display: inline-block;
 		position: relative;
@@ -45,12 +45,12 @@ body {
 		}
 		&::after {
 			background-color: var(--quertiary-color);
-			width: 35%;
+			width: 60px;
 		}
 	}
 
 	@media screen and (max-width: 768px) {
-		margin-bottom: 50px;
+		margin-bottom: 150px;
 
 		.section-title {
 			margin-bottom: 30px;

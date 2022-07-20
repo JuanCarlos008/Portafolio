@@ -3,7 +3,7 @@
 		min-height: 100vh;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-areas: "img content";
+		grid-template-areas: "content img";
 		gap: 50px;
 		height: 100%;
 		@media screen and (max-width: 768px) {
@@ -16,6 +16,9 @@
 
 		@media screen and (max-width: 280px) {
 			display: flex;
+			min-height: none;
+			height: 100vh;
+			max-height: 700px;
 		}
 	}
 
@@ -106,11 +109,11 @@
 				padding: 10px 28px;
 				text-align: center;
 				text-transform: uppercase;
+				font-size: 0.8rem;
 				display: flex;
 				align-items: center;
 				gap: 5px;
 				border-radius: 10px;
-				font-size: var(--p-font-size);
 				transition: all ease 0.3s;
 
 				&:hover {

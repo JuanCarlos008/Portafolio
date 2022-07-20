@@ -7,10 +7,6 @@ import "./styles.scss";
 const navPaths = [
 	{
 		path: "/",
-		name: "inicio",
-	},
-	{
-		path: "/sobre-mi",
 		name: "sobre mí",
 	},
 	{

@@ -5,6 +5,7 @@ import { CgDisplayFlex } from "react-icons/cg";
 import { FaLaptopCode } from "react-icons/fa";
 import { TbBrowserCheck } from "react-icons/tb";
 import { AiOutlineFormatPainter } from "react-icons/ai";
+import { SiAiohttp } from "react-icons/si";
 import "./styles.scss";
 
 const data = [
@@ -35,6 +36,13 @@ const data = [
 		description:
 			"We create web applications that are user-friendly and easy to use.",
 		icon: <CgDisplayFlex />,
+	},
+	{
+		id: 5,
+		title: "Handle APIs",
+		description:
+			"We create web applications that are user-friendly and easy to use.",
+		icon: <SiAiohttp />,
 	},
 ];
 export const ServiceCards = () => {
