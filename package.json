@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite --port 3001",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy":"npm run build && git add dist -f && git commit -m 'hosting'  && git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "react": "18.0.0",
