@@ -56,7 +56,7 @@
 
 			&::before {
 				position: absolute;
-				content: "";
+				content: '';
 				width: 0;
 				left: -5%;
 				top: 50%;
@@ -74,29 +74,43 @@
 		}
 	}
 
-	&__cv {
-		padding: 10px 28px;
-		background-image: linear-gradient(
-			to right,
-			var(--tertiary-color),
-			var(--quertiary-color)
-		);
-		border-radius: 10px;
-		color: var(--tertiary-text-color);
+	&__external-links {
 		display: flex;
-		align-items: center;
-		gap: 5px;
-		transition: all ease 0.3s;
+		flex-wrap: wrap;
+		gap: 20px;
+		z-index: 1;
 
-		&:hover {
-			transform: scale(0.9);
-		}
-		span {
-			filter: invert(1);
-			font-size: 1rem;
+		.link {
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 0.8rem;
+			display: flex;
+			align-items: center;
+			gap: 5px;
+			border-radius: 5px;
+			transition: all ease 0.3s;
 
-			&.icon-down {
-				display: none;
+			&:hover {
+				transform: scale(0.9);
+			}
+
+			svg {
+				width: 1.5rem;
+				height: 1.5rem;
+			}
+
+			&--github {
+				background: #222222;
+			}
+
+			&--linkedin {
+				background: #046fa1;
+			}
+
+			@media screen and (max-width: 640px) {
+				span {
+					display: none;
+				}
 			}
 		}
 	}
@@ -127,19 +141,6 @@
 			&.isActive {
 				backdrop-filter: blur(50px);
 				transform: translateX(0);
-			}
-		}
-
-		&__cv {
-			z-index: 1;
-
-			span {
-				&.icon-down {
-					display: initial;
-				}
-				&.literal-down {
-					display: none;
-				}
 			}
 		}
 	}

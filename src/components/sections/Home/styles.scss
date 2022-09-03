@@ -3,15 +3,16 @@
 		min-height: 100vh;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-areas: "content img";
+		grid-template-areas: 'content img';
 		gap: 50px;
 		height: 100%;
 		@media screen and (max-width: 768px) {
 			grid-template-columns: 1fr;
 			grid-template-areas:
-				"content"
-				"img";
+				'content'
+				'img';
 			gap: 30px;
+			min-height: 700px;
 		}
 
 		@media screen and (max-width: 280px) {
@@ -100,44 +101,23 @@
 			max-width: 420px;
 		}
 
-		&__buttons {
+		&__cv {
+			padding: 10px 28px;
+			width: max-content;
+			background-image: linear-gradient(
+				to right,
+				var(--tertiary-color),
+				var(--quertiary-color)
+			);
+			border-radius: 5px;
+			color: var(--primary-text-color);
 			display: flex;
-			flex-wrap: wrap;
-			gap: 20px;
+			align-items: center;
+			gap: 5px;
+			transition: all ease 0.3s;
 
-			.button {
-				padding: 10px 28px;
-				text-align: center;
-				text-transform: uppercase;
-				font-size: 0.8rem;
-				display: flex;
-				align-items: center;
-				gap: 5px;
-				border-radius: 10px;
-				transition: all ease 0.3s;
-
-				&:hover {
-					transform: scale(0.9);
-				}
-
-				svg {
-					width: 1.5rem;
-					height: 1.5rem;
-				}
-
-				&--github {
-					background: #222222;
-				}
-
-				&--linkedin {
-					background: #046fa1;
-				}
-
-				@media screen and (max-width: 640px) {
-					span {
-						display: none;
-					}
-				}
+			&:hover {
+				transform: scale(0.9);
 			}
 		}
 

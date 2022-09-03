@@ -1,16 +1,20 @@
-import React from "react";
-import { Nav } from "@components/common/Nav/Index";
+import React from 'react'
+import { Nav } from '@components/common/Nav/Index'
 
-import { HomeSection } from "@components/sections/Home/Index";
-import { AboutSection } from "@components/sections/AboutMe/Index";
-import { ServicesSection } from "@components/sections/ServiceC/Index";
-import { Lines } from "@components/Background/Lines";
-import { SkillsSection } from "@components/sections/Skills/Index";
-import { Footer } from "./components/sections/Footer/Index";
+import { HomeSection } from '@/components/Sections/Home/Index'
+import { AboutSection } from '@/components/Sections/AboutMe/Index'
+import { ServicesSection } from '@/components/Sections/ServiceC/Index'
+import { Lines } from '@components/Background/Lines'
+import { SkillsSection } from '@/components/Sections/Skills/Index'
+import { Footer } from '@/components/Sections/Footer/Index'
+import { ProyectSection } from './components/Sections/Proyects/Index'
+import { DownUpBtn } from './components/DownUpBtn/Index'
+import { ContactSection } from './components/Sections/Contact/Index'
 
 export const Portafolio = () => {
 	return (
 		<div className='app-wrapper'>
+			<DownUpBtn />
 			<Nav />
 			<HomeSection />
 			<Lines>
@@ -18,7 +22,10 @@ export const Portafolio = () => {
 				<ServicesSection />
 				<SkillsSection />
 			</Lines>
+			<ProyectSection />
+			<ContactSection />
+
 			<Footer />
 		</div>
-	);
-};
+	)
+}

@@ -1,14 +1,14 @@
-import { BlurCircles } from "@/components/Background/BlurCircles";
-import { MaxContainer } from "@/components/containers/MaxContainer";
-import React from "react";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import "./styles.scss";
+import { BlurCircles } from '@/components/Background/BlurCircles'
+import { MaxContainer } from '@/components/containers/MaxContainer'
+import React from 'react'
+import { BsFileEarmarkArrowDown } from 'react-icons/bs'
+import './styles.scss'
 
 export const HomeSection = () => {
 	return (
 		<BlurCircles>
 			<MaxContainer>
-				<section className='home section'>
+				<section className='home section' id='home'>
 					<div className='home__wrapper'>
 						<div className='home__img'>
 							<div className='home__img__box'>
@@ -40,30 +40,17 @@ export const HomeSection = () => {
 								</p>
 							</div>
 
-							<div className='home__content__buttons'>
-								<a
-									href='https://github.com/JuanCarlos008'
-									target='_blank'
-									rel='noopener noreferrer'
-									className='button button--github'
-								>
-									<AiFillGithub />
-									<span>github</span>
-								</a>
-								<a
-									href='https://www.linkedin.com/in/juan-carlos008/'
-									target='_blank'
-									rel='noopener noreferrer'
-									className='button button--linkedin'
-								>
-									<AiFillLinkedin />
-									<span>linkedin</span>
-								</a>
-							</div>
+							<button className='home__content__cv'>
+								<span className='icon'>
+									<BsFileEarmarkArrowDown />
+								</span>
+								<span className='literal-down'>Descargar</span>
+								<span>CV</span>
+							</button>
 						</div>
 					</div>
 				</section>
 			</MaxContainer>
 		</BlurCircles>
-	);
-};
+	)
+}

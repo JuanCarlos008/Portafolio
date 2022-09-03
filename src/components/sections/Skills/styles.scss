@@ -17,12 +17,13 @@
 
 	&-cards-wrapper {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-		align-items: center;
+		grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 		justify-items: center;
 		gap: 80px;
 
 		@media screen and (max-width: 768px) {
+			grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+			// place-items: center;
 			gap: 20px;
 		}
 	}

@@ -1,13 +1,13 @@
-import { MaxContainer } from "@/components/containers/MaxContainer";
-import React from "react";
-import "./styles.scss";
+import { MaxContainer } from '@/components/containers/MaxContainer'
+import React from 'react'
+import './styles.scss'
 
 export const AboutSection = () => {
 	return (
-		<div className='about section'>
+		<div className='about section' id='about'>
 			<MaxContainer>
 				<div className='about__wrapper'>
-					<h2 className='section-title'>Sobre Mí</h2>
+					<h2 className='section-title'>Sobre mí</h2>
 
 					<div className='about__info'>
 						<p>
@@ -34,5 +34,5 @@ export const AboutSection = () => {
 				</div>
 			</MaxContainer>
 		</div>
-	);
-};
+	)
+}

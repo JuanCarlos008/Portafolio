@@ -3,6 +3,7 @@ import { useEffect, useId, useState } from "react";
 import { Hamburger } from "@/components/common/Hamburger/Index";
 import { BsFileEarmarkArrowDown } from "react-icons/bs";
 import "./styles.scss";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 const navPaths = [
 	{
@@ -23,15 +24,22 @@ export const Nav = () => {
 	const [isScrolling, setIsScrolling] = useState(false);
 	const [isNavOpen, setIsNavOpen] = useState(false);
 	useEffect(() => {
-		window.onscroll = () => {
+		window.scrollY > 50 && setIsScrolling(true);
+
+		window.addEventListener("scroll", () => {
 			if (window.scrollY > 50) {
 				setIsScrolling(true);
 				setIsNavOpen(false);
 			} else {
 				setIsScrolling(false);
 			}
-		};
-		return () => (window.onscroll = null);
+		});
+
+		return () =>
+			window.removeEventListener("scroll", () => {
+				setIsScrolling(false);
+				setIsNavOpen(false);
+			});
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
@@ -59,13 +67,24 @@ export const Nav = () => {
 						))}
 					</nav>
 					<div className='wrapper-togle-cv'>
-						<button className='nav__cv'>
-							<span className='icon-down'>
-								<BsFileEarmarkArrowDown />
-							</span>
-							<span className='literal-down'>Descargar</span>
-							<span>CV</span>
-						</button>
+						<div className='nav__external-links'>
+							<a
+								href='https://github.com/JuanCarlos008'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='link'
+							>
+								<AiFillGithub />
+							</a>
+							<a
+								href='https://www.linkedin.com/in/juan-carlos008/'
+								target='_blank'
+								rel='noopener noreferrer'
+								className='link'
+							>
+								<AiFillLinkedin />
+							</a>
+						</div>
 						<Hamburger setOpen={setIsNavOpen} isOpen={isNavOpen} />
 					</div>
 				</div>
