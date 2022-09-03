@@ -24,9 +24,9 @@ export const DownUpBtn = () => {
 			href={section}
 			className={`down-up-btn ${isScrolling ? 'isScrolling' : ''}`}
 		>
-			<a href={section}>
+			<span>
 				<BsArrowDown />
-			</a>
+			</span>
 		</a>
 	)
 }

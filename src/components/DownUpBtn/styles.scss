@@ -23,9 +23,9 @@
 		transform: translateX(-50%) rotate(180deg);
 	}
 
-	a {
+	span {
 		color: var(--primary-text-color);
-		font-size: var(--title-font-size-small);
+		font-size: var(--p-font-size);
 		transition: all 0.5s ease-in-out;
 
 		svg {
