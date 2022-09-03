@@ -4,6 +4,10 @@
 	overflow: hidden;
 	min-height: 700px;
 
+	@media screen and (max-width: 428px) {
+		min-height: 600px;
+	}
+
 	form {
 		position: absolute;
 		top: 50%;
@@ -42,6 +46,7 @@
 				background-color: var(--primary-color);
 				width: 100%;
 				box-sizing: border-box;
+				color: var(--secondary-text-color);
 
 				&::placeholder {
 					color: var(--placeholder-text-color);

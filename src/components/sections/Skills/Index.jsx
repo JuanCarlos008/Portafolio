@@ -1,11 +1,11 @@
-import { MaxContainer } from "@/components/containers/MaxContainer";
-import { skillsSvgComponent } from "@/components/SvgSkills/Index";
-import React from "react";
-import "./styles.scss";
+import { MaxContainer } from '@/components/containers/MaxContainer'
+import { skillsSvgComponent } from '@/components/SvgSkills/Index'
+import React from 'react'
+import './styles.scss'
 
 export const SkillsSection = () => {
 	return (
-		<div className='skills section'>
+		<div className='skills section' id='portafolio'>
 			<MaxContainer>
 				<div className='skills__wrapper'>
 					<h2 className='section-title'>Herramientas</h2>
@@ -20,5 +20,5 @@ export const SkillsSection = () => {
 				</div>
 			</MaxContainer>
 		</div>
-	);
-};
+	)
+}

@@ -8,18 +8,18 @@ export const HomeSection = () => {
 	return (
 		<BlurCircles>
 			<MaxContainer>
-				<section className='home section' id='home'>
+				<section className='home section' id='inicio'>
 					<div className='home__wrapper'>
 						<div className='home__img'>
 							<div className='home__img__box'>
 								<img
 									className='img-line'
-									src='/assets/images/line.svg'
+									src='./assets/images/line.svg'
 									alt='line image'
 								/>
 								<img
 									className='img-profile'
-									src='/assets/images/jc.png'
+									src='./assets/images/jc.png'
 									alt='jc image'
 								/>
 							</div>

@@ -6,7 +6,7 @@ import './styles.scss'
 
 export const ContactSection = () => {
 	return (
-		<div className='contact section'>
+		<div className='contact section' id='contacto'>
 			<MaxContainer>
 				<div className='contact__wrapper'>
 					<ContactForm />

@@ -1,63 +1,66 @@
-import { MaxContainer } from "@/components/containers/MaxContainer";
-import { useEffect, useId, useState } from "react";
-import { Hamburger } from "@/components/common/Hamburger/Index";
-import { BsFileEarmarkArrowDown } from "react-icons/bs";
-import "./styles.scss";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { MaxContainer } from '@/components/containers/MaxContainer'
+import { useEffect, useId, useState } from 'react'
+import { Hamburger } from '@/components/common/Hamburger/Index'
+import './styles.scss'
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
 const navPaths = [
 	{
-		path: "/",
-		name: "sobre mí",
+		path: '#sobre-mi',
+		name: 'sobre mí',
 	},
 	{
-		path: "/portafolio",
-		name: "portafolio",
+		path: '#servicios',
+		name: 'servicios',
 	},
 	{
-		path: "/contacto",
-		name: "contacto",
+		path: '#portafolio',
+		name: 'portafolio',
 	},
-];
+	{
+		path: '#contacto',
+		name: 'contacto',
+	},
+]
 
 export const Nav = () => {
-	const [isScrolling, setIsScrolling] = useState(false);
-	const [isNavOpen, setIsNavOpen] = useState(false);
+	const [isScrolling, setIsScrolling] = useState(false)
+	const [isNavOpen, setIsNavOpen] = useState(false)
 	useEffect(() => {
-		window.scrollY > 50 && setIsScrolling(true);
+		window.scrollY > 50 && setIsScrolling(true)
 
-		window.addEventListener("scroll", () => {
+		window.addEventListener('scroll', () => {
 			if (window.scrollY > 50) {
-				setIsScrolling(true);
-				setIsNavOpen(false);
+				setIsScrolling(true)
+				setIsNavOpen(false)
 			} else {
-				setIsScrolling(false);
+				setIsScrolling(false)
 			}
-		});
+		})
 
 		return () =>
-			window.removeEventListener("scroll", () => {
-				setIsScrolling(false);
-				setIsNavOpen(false);
-			});
+			window.removeEventListener('scroll', () => {
+				setIsScrolling(false)
+				setIsNavOpen(false)
+			})
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, []);
+	}, [])
 
 	return (
 		<div
 			className={`${
-				isScrolling ? "nav-container isScrolling" : "nav-container"
+				isScrolling ? 'nav-container isScrolling' : 'nav-container'
 			}`}
 		>
 			<MaxContainer>
 				<div className='nav'>
-					<div className='nav__brand'>
+					<a href='#inicio' className='nav__brand'>
 						<p>Juan C</p>
 						<span>.</span>
-					</div>
+					</a>
 					<nav
 						className={`${
-							isNavOpen ? "nav__navigation isActive" : "nav__navigation"
+							isNavOpen ? 'nav__navigation isActive' : 'nav__navigation'
 						}`}
 					>
 						{navPaths.map((path) => (
@@ -90,5 +93,5 @@ export const Nav = () => {
 				</div>
 			</MaxContainer>
 		</div>
-	);
-};
+	)
+}

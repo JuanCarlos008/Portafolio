@@ -4,7 +4,7 @@ import './styles.scss'
 
 export const AboutSection = () => {
 	return (
-		<div className='about section' id='about'>
+		<div className='about section' id='sobre-mi'>
 			<MaxContainer>
 				<div className='about__wrapper'>
 					<h2 className='section-title'>Sobre mí</h2>

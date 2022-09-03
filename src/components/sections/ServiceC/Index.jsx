@@ -49,7 +49,7 @@ const data = [
 
 export const ServicesSection = () => {
 	return (
-		<div className='services section'>
+		<div className='services section' id='servicios'>
 			<MaxContainer>
 				<div className='services__wrapper'>
 					{/* 					<h2 className='section-title'>¿Qué ofrezco?</h2> */}

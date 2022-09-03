@@ -1,8 +1,8 @@
-import { BlurCircles } from "@/components/Background/BlurCircles";
-import { MaxContainer } from "@/components/containers/MaxContainer";
-import { WorkCard } from "@/components/WorkCard/Index";
-import React from "react";
-import "./styles.scss";
+import { BlurCircles } from '@/components/Background/BlurCircles'
+import { MaxContainer } from '@/components/containers/MaxContainer'
+import { WorkCard } from '@/components/WorkCard/Index'
+import React from 'react'
+import './styles.scss'
 
 export const ProyectSection = () => {
 	return (
@@ -24,5 +24,5 @@ export const ProyectSection = () => {
 				</MaxContainer>
 			</div>
 		</BlurCircles>
-	);
-};
+	)
+}
