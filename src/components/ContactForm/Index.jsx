@@ -4,10 +4,14 @@ import { AiOutlineSend } from 'react-icons/ai'
 import './styles.scss'
 
 export const ContactForm = () => {
+	const onHandleSubmit = (e) => {
+		e.preventDefault()
+	}
+
 	return (
 		<div className='form-container'>
 			<Lines bg='--primary-color'>
-				<form>
+				<form onSubmit={onHandleSubmit}>
 					<div className='input-box'>
 						<label htmlFor='nombre'>Nombre</label>
 						<input
@@ -42,7 +46,7 @@ export const ContactForm = () => {
 						<textarea placeholder='Mensaje' id='message'></textarea>
 					</div>
 
-					<button type='submit' className='send-btn'>
+					<button type='submit' className='send-btn disabled'>
 						<span>Enviar</span>
 						<AiOutlineSend className='icon' />
 					</button>

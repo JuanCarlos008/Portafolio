@@ -1,6 +1,6 @@
-import { MaxContainer } from "@/components/containers/MaxContainer";
-import React from "react";
-import "./styles.scss";
+import { MaxContainer } from '@/components/containers/MaxContainer'
+import React from 'react'
+import './styles.scss'
 
 export const Footer = () => {
 	return (
@@ -13,9 +13,9 @@ export const Footer = () => {
 								<span>Juan Carlos H.S</span>
 							</div>
 							<div className='info-contact__item__info'>
-								<p>
+								<a href='#inicio'>
 									Desarrollador web <br /> Frontend
-								</p>
+								</a>
 							</div>
 						</div>
 						<div className='info-contact__item'>
@@ -23,7 +23,9 @@ export const Footer = () => {
 								<span>Github</span>
 							</div>
 							<div className='info-contact__item__info'>
-								<p>https://github.com/JuanCarlos008</p>
+								<a href='https://github.com/JuanCarlos008' target='_blank'>
+									https://github.com/JuanCarlos008
+								</a>
 							</div>
 						</div>
 						<div className='info-contact__item'>
@@ -31,7 +33,12 @@ export const Footer = () => {
 								<span>Linkedin</span>
 							</div>
 							<div className='info-contact__item__info'>
-								<p>www.linkedin.com/in/ juan-carlos008</p>
+								<a
+									href='https://www.linkedin.com/in/juan-carlos008/'
+									target='_blank'
+								>
+									https://www.linkedin.com/in/juan-carlos008/
+								</a>
 							</div>
 						</div>
 						<div className='info-contact__item'>
@@ -39,7 +46,13 @@ export const Footer = () => {
 								<span>Correo</span>
 							</div>
 							<div className='info-contact__item__info'>
-								<p>juan_carlos008@outlook.com</p>
+								<a
+									target='_blank'
+									rel='noreferrer'
+									href='https://mail.google.com/mail/?view=cm&fs=1&to=juan_carlos008@outlook.com'
+								>
+									juan_carlos008@outlook.com
+								</a>
 							</div>
 						</div>
 					</div>
@@ -53,5 +66,5 @@ export const Footer = () => {
 				</MaxContainer>
 			</div>
 		</footer>
-	);
-};
+	)
+}

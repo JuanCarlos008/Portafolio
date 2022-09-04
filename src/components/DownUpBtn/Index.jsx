@@ -23,6 +23,7 @@ export const DownUpBtn = () => {
 		<a
 			href={section}
 			className={`down-up-btn ${isScrolling ? 'isScrolling' : ''}`}
+			aria-label='Scrolling up'
 		>
 			<span>
 				<BsArrowDown />

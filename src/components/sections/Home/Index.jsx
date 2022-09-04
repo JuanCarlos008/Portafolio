@@ -27,8 +27,10 @@ export const HomeSection = () => {
 						<div className='home__content'>
 							<div className='home__content__welcome'>
 								<h1 className='title'>
-									hola! <span className='guess-name'>lisandro</span>
-									<br /> mi nombre es <p>juan carlos</p>
+									<p>hola!</p>{' '}
+									{/* <span className='guess-name'>lisandro</span> */}
+									<p>mi nombre es</p>
+									<p>juan carlos</p>
 								</h1>
 							</div>
 
@@ -36,7 +38,7 @@ export const HomeSection = () => {
 								<p>
 									Soy un entusiasta desarrollador frontend, que siempre está
 									buscando la armonía entre lo visual y lo funcional para así
-									brindar la mejor experiencia.
+									brindar una mejor experiencia.
 								</p>
 							</div>
 

@@ -76,6 +76,7 @@ export const Nav = () => {
 								target='_blank'
 								rel='noopener noreferrer'
 								className='link'
+								aria-label='Link to GitHub'
 							>
 								<AiFillGithub />
 							</a>
@@ -84,6 +85,7 @@ export const Nav = () => {
 								target='_blank'
 								rel='noopener noreferrer'
 								className='link'
+								aria-label='Link to linkedin'
 							>
 								<AiFillLinkedin />
 							</a>
