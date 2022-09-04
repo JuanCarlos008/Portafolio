@@ -1,11 +1,12 @@
 .home {
 	&__wrapper {
-		min-height: 100vh;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-areas: 'content img';
 		gap: 50px;
 		height: 100%;
+		min-height: 900px;
+
 		@media screen and (max-width: 768px) {
 			grid-template-columns: 1fr;
 			grid-template-areas:
