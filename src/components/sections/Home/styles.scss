@@ -85,7 +85,7 @@
 				font-family: var(--fontCodeLatin);
 				text-transform: uppercase;
 
-				background: -webkit-linear-gradient(
+				/* background: -webkit-linear-gradient(
 					-45deg,
 					var(--quertiary-text-color),
 					var(--secondary-text-color),
@@ -93,7 +93,7 @@
 				);
 				-webkit-background-clip: text;
 				background-clip: text;
-				-webkit-text-fill-color: transparent;
+				-webkit-text-fill-color: transparent; */
 
 				.guess-name {
 					font-family: var(--fontNextDoor);

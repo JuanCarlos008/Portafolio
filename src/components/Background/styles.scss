@@ -18,6 +18,7 @@
 			filter: blur(150px);
 			width: clamp(180px, 60vw, 620px);
 			height: clamp(180px, 60vw, 620px);
+			z-index: 0;
 
 			&--1 {
 				top: -10%;
@@ -48,12 +49,12 @@
 		@media screen and (max-width: 768px) {
 			.circle {
 				&--1 {
-					top: -15%;
-					left: -15%;
+					top: -20%;
+					left: -20%;
 				}
 				&--2 {
-					right: -15%;
-					bottom: -15%;
+					right: -20%;
+					bottom: -20%;
 				}
 			}
 		}
