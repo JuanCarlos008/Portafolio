@@ -1,10 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./styles.scss";
-import { Portafolio } from "./Portafolio";
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { App } from './App'
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+import './styles.scss'
+
+ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
-		<Portafolio />
+		<App />
 	</React.StrictMode>
-);
+)

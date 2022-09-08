@@ -11,7 +11,7 @@ import { ProyectSection } from './components/Sections/Proyects/Index'
 import { DownUpBtn } from './components/DownUpBtn/Index'
 import { ContactSection } from './components/Sections/Contact/Index'
 
-export const Portafolio = () => {
+export const App = () => {
 	return (
 		<div className='app-wrapper'>
 			<DownUpBtn />
