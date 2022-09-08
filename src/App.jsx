@@ -24,7 +24,6 @@ export const App = () => {
 			</Lines>
 			<ProyectSection />
 			<ContactSection />
-
 			<Footer />
 		</div>
 	)
