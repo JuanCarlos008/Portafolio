@@ -7,7 +7,7 @@ import { ServicesSection } from '@/components/Sections/ServiceC/Index'
 import { Lines } from '@components/Background/Lines'
 import { SkillsSection } from '@/components/Sections/Skills/Index'
 import { Footer } from '@/components/Sections/Footer/Index'
-import { ProyectSection } from './components/Sections/Proyects/Index'
+import { ProjectSection } from './components/Sections/Projects/Index'
 import { DownUpBtn } from './components/DownUpBtn/Index'
 import { ContactSection } from './components/Sections/Contact/Index'
 
@@ -22,7 +22,7 @@ export const App = () => {
 				<ServicesSection />
 				<SkillsSection />
 			</Lines>
-			<ProyectSection />
+			<ProjectSection />
 			<ContactSection />
 			<Footer />
 		</div>

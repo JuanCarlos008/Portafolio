@@ -30,7 +30,7 @@ export const HomeSection = () => {
 									<p>hola!</p>{' '}
 									{/* <span className='guess-name'>lisandro</span> */}
 									<p>mi nombre es</p>
-									<p>juan carlos</p>
+									<p className='my-name'>juan carlos</p>
 								</h1>
 							</div>
 
