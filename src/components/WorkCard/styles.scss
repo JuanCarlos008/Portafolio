@@ -1,7 +1,7 @@
 .card {
 	display: grid;
 	grid-template: repeat(6, 1fr) / repeat(6, 1fr);
-	height: 250px;
+	// height: 280px;
 	width: 100%;
 
 	.box-img {
@@ -9,6 +9,7 @@
 		grid-area: 1/1/6/6;
 		transition: all 0.3s ease-in-out;
 		transform-origin: left;
+		height: 280px;
 
 		.eyes-icon {
 			font-size: 25px;
@@ -42,13 +43,14 @@
 	.box-info {
 		position: relative;
 		grid-area: 2/2/7/7;
-		backdrop-filter: blur(5px);
+		backdrop-filter: blur(10px);
 		z-index: 1;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
 		gap: 20px;
 		padding: 20px;
+		min-height: 250px;
 
 		&__title {
 			font-size: var(--title-font-size-small);
@@ -63,7 +65,6 @@
 			a {
 				display: block;
 				text-decoration: underline;
-				// color: var(--secondary-text-color);
 				margin-top: 5px;
 				transition: all;
 

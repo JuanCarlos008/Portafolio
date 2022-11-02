@@ -11,21 +11,21 @@ export const AboutSection = () => {
 
 					<div className='about__info'>
 						<p>
-							En 2021 empecé mi carrera como desarrollador front-end en la
+							En 2021 empecé mi carrera como desarrollador frontend en la
 							empresa DUV Agency donde me encargo de todo lo relacionado con las
 							UI desde su punto de diseño dando sugerencias hasta el desarrollo
 							de los sitios web.
 						</p>
 						<br />
 						<p>
-							Sitios web con los cuales posicionamos a los cliente a nivel
+							Sitios web con los cuales posicionamos a los clientes a nivel
 							digital cubriendo esa brecha con un buen SEO y optimización de
-							contenido para ser mas accesibles a la hora de ser buscados en
-							cualquier motor de busqueda.
+							contenido para ser más accesibles a la hora de ser buscados en
+							cualquier motor de búsqueda.
 						</p>
 						<br />
 						<p>
-							Con esto mas que convencido que soy un desarrollador front-end y
+							Con esto más que convencido que soy un desarrollador front-end y
 							candidato con conocimiento para entender lo que quiere un cliente
 							y lo que el empleador necesita en su empresa en una vacante de
 							este tipo.

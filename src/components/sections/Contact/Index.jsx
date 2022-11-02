@@ -1,4 +1,3 @@
-import { Lines } from '@/components/Background/Lines'
 import { ContactForm } from '@/components/ContactForm/Index'
 import { MaxContainer } from '@/components/containers/MaxContainer'
 import React from 'react'
