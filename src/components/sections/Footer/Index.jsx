@@ -61,7 +61,7 @@ export const Footer = () => {
 			<div className='copy-right'>
 				<MaxContainer>
 					<div className='content'>
-						<p>Copyright © 2022 Juan Carlos H.S. All rights reserved.</p>
+						<p>Juan Carlos H.S. - Desarrollador Frontend</p>
 					</div>
 				</MaxContainer>
 			</div>

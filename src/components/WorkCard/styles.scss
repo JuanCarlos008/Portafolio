@@ -125,3 +125,73 @@
 		}
 	}
 }
+
+.card-2 {
+	position: relative;
+	padding: 20px;
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		width: 25%;
+		height: 25%;
+		transition: all 0.3s ease-in-out;
+		pointer-events: none;
+	}
+
+	&::before {
+		top: 0;
+		left: 0;
+		border-top: 1px solid var(--tertiary-color);
+		border-left: 1px solid var(--tertiary-color);
+		border-bottom: transparent;
+		border-right: transparent;
+	}
+
+	&::after {
+		bottom: 0;
+		right: 0;
+		border-bottom: 1px solid var(--tertiary-color);
+		border-right: 1px solid var(--tertiary-color);
+		border-top: transparent;
+		border-left: transparent;
+	}
+
+	.box-info-2 {
+		margin-bottom: 20px;
+
+		&__title {
+			font-size: var(--title-font-size-small);
+			font-weight: bold;
+			color: var(--primary-text-color);
+			margin-bottom: 5px;
+
+			.icon {
+				font-size: 1.2rem;
+			}
+		}
+
+		&__skills {
+			font-size: 0.8rem;
+			color: var(--secondary-text-color);
+
+			ul {
+				display: flex;
+				gap: 10px;
+				li {
+					list-style: circle inside;
+				}
+			}
+		}
+	}
+
+	.box-images-2 {
+		width: 100%;
+
+		.img {
+			width: 80%;
+			min-width: 230px;
+		}
+	}
+}

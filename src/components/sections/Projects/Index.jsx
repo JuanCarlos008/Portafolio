@@ -1,6 +1,7 @@
 import { BlurCircles } from '@/components/Background/BlurCircles'
 import { MaxContainer } from '@/components/containers/MaxContainer'
 import { WorkCard } from '@/components/WorkCard/Index'
+import { NewWorkCard } from '@/components/WorkCard/NewWorkCard'
 import React from 'react'
 import { data } from './data'
 import './styles.scss'
@@ -12,10 +13,9 @@ export const ProjectSection = () => {
 				<MaxContainer>
 					<div className='project__wrapper'>
 						<h2 className='section-title'>Experiencia</h2>
-
 						<div className='project__cards-wrapper'>
 							{data.map((d) => (
-								<WorkCard data={d} key={data.id} />
+								<NewWorkCard data={d} key={data.id} />
 							))}
 						</div>
 					</div>
