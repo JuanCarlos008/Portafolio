@@ -129,6 +129,7 @@
 .card-2 {
 	position: relative;
 	padding: 20px;
+	backdrop-filter: blur(10px);
 
 	&::before,
 	&::after {
@@ -173,14 +174,22 @@
 		}
 
 		&__skills {
-			font-size: 0.8rem;
-			color: var(--secondary-text-color);
+			font-size: 0.7rem;
 
 			ul {
 				display: flex;
 				gap: 10px;
 				li {
-					list-style: circle inside;
+					color: var(--primary-text-color);
+
+					background: linear-gradient(
+						90deg,
+						var(--tertiary-color) 0%,
+						var(--quertiary-color) 100%
+					);
+					padding: 3px 5px;
+					border-radius: 5px;
+					font-weight: 600;
 				}
 			}
 		}

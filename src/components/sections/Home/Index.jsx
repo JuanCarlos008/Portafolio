@@ -1,3 +1,4 @@
+import { BackProfileLine } from '@/components/Background/BackProfileLine'
 import { BlurCircles } from '@/components/Background/BlurCircles'
 import { MaxContainer } from '@/components/containers/MaxContainer'
 import React from 'react'
@@ -12,11 +13,7 @@ export const HomeSection = () => {
 					<div className='home__wrapper'>
 						<div className='home__img'>
 							<div className='home__img__box'>
-								<img
-									className='img-line'
-									src='./assets/images/line.svg'
-									alt='line image'
-								/>
+								<BackProfileLine />
 								<img
 									className='img-profile'
 									src='./assets/images/jc.png'
