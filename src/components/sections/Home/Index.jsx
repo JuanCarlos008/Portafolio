@@ -2,7 +2,7 @@ import { BackProfileLine } from '@/components/Background/BackProfileLine'
 import { BlurCircles } from '@/components/Background/BlurCircles'
 import { MaxContainer } from '@/components/containers/MaxContainer'
 import React from 'react'
-import { BsFileEarmarkArrowDown } from 'react-icons/bs'
+import { AiOutlineCloudDownload } from 'react-icons/ai'
 import './styles.scss'
 
 export const HomeSection = () => {
@@ -39,10 +39,8 @@ export const HomeSection = () => {
 								</p>
 							</div>
 
-							<button className='home__content__cv'>
-								<span className='icon'>
-									<BsFileEarmarkArrowDown />
-								</span>
+							<button className='home__content__cv disabled'>
+								<AiOutlineCloudDownload />
 								<span className='literal-down'>Descargar</span>
 								<span>CV</span>
 							</button>

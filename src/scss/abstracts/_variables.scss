@@ -3,7 +3,6 @@
 	--fontCodeLatin: CodeLatin, sans-serif;
 	--fontQuickSand: Quicksand, sans-serif;
 	--fontNextDoor: NextDoor, cursive, sans-serif;
-	--fontAirbnbCereal: AirbnbCereal, sans-serif;
 
 	/* font size */
 	--p-font-size: clamp(0.8rem, 2vw, 1rem);
@@ -11,6 +10,8 @@
 	--title-font-size: clamp(1.8rem, 2vw, 2rem);
 	--title-font-size-small: clamp(1.2rem, 2vw, 1.5rem);
 	--title-section-font-size: clamp(2.5rem, 3vw, 4rem);
+
+	--placeholder-text-color: #636363;
 
 	/* colors */
 	/* --primary-color: #000000;
@@ -62,24 +63,22 @@
 	/* ---------------------------------------------------------------- */
 
 	--primary-color: #000000;
-	--secondary-color: #fcf6ff;
+	--secondary-color: #f1f6f9;
 	--tertiary-color: #ae8cfa;
 	--quertiary-color: #746cfe;
 
-	--primary-text-color: #fcf6ff;
+	--primary-text-color: #f1f6f9;
 	--secondary-text-color: #ae8cfa;
 	--tertiary-text-color: #000000;
 	--quertiary-text-color: #746cfe;
-	--placeholder-text-color: #636363;
 
-	/* --primary-color: #fcf6ff;
+	/* --primary-color: #f1f6f9;
 	--secondary-color: #12111b;
 	--tertiary-color: #ae8cfa;
 	--quertiary-color: #746cfe;
 
 	--primary-text-color: #000000;
 	--secondary-text-color: #ae8cfa;
-	--tertiary-text-color: #fcf6ff;
-	--quertiary-text-color: #746cfe;
-	--placeholder-text-color: #636363; */
+	--tertiary-text-color: #f1f6f9;
+	--quertiary-text-color: #746cfe; */
 }

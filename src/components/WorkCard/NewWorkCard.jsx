@@ -14,7 +14,7 @@ export const NewWorkCard = ({ data }) => {
 				<div className='box-info-2__skills'>
 					<ul>
 						{data.skills.map((skill) => (
-							<li>{skill}</li>
+							<li key={skill}>{skill}</li>
 						))}
 					</ul>
 				</div>

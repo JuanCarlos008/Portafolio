@@ -66,7 +66,7 @@ import { skillsSvgComponent } from '@/components/SvgSkills/Index'
 
 export const data = [
 	{
-		id: 3,
+		id: 2,
 		title: 'Gigantes del Cibao',
 		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 		img: './assets/images/projects/project_3.png',
@@ -74,7 +74,7 @@ export const data = [
 		skills: ['Next.js', 'Emotion.js'],
 	},
 	{
-		id: 2,
+		id: 3,
 		title: 'LNB Dominicana',
 		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 		img: './assets/images/projects/project_2.png',
