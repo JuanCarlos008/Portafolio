@@ -10,18 +10,18 @@ export const ServicesSection = () => {
 		<div className='services section' id='servicios'>
 			<MaxContainer>
 				<div className='services__wrapper'>
-				<h2 className='section-title'>Servicios</h2>
+				{/* <h2 className='section-title'>Servicios</h2> */}
 					<div className='container'>
-						{/* <div className='question'>
+						<div className='question'>
 							<h2 className='question__title'>¿Qué ofrezco?</h2>
 							<p>
 								Puedo posicionar, crear, promocionar y optimizar tu sitio web
 								para que tenga una mejor visibilidad en los buscadores.
 							</p>
-						</div> */}
-						<div className='service-cards-wrapper2'>
+						</div>
+						<div className='service-cards-wrapper'>
 							{data.map((item) => (
-								<ServiceCard2 key={item.id} item={item} />
+								<ServiceCard key={item.id} item={item} />
 							))}
 						</div>
 					</div>
