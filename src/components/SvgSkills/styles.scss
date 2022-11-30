@@ -4,12 +4,21 @@
 	transition: all ease 0.3s;
 
 	stop {
-		&:nth-child(1) {
+		/* &:nth-child(1) {
 			stop-color: var(--secondary-color);
 			stop-opacity: 1;
 		}
 		&:nth-child(2) {
 			stop-color: var(--secondary-color);
+			stop-opacity: 1;
+		} */
+
+		&:nth-child(1) {
+			stop-color: var(--tertiary-color);
+			stop-opacity: 1;
+		}
+		&:nth-child(2) {
+			stop-color: var(--quertiary-color);
 			stop-opacity: 1;
 		}
 

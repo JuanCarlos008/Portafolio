@@ -13,7 +13,7 @@ export const Html = (props) => {
 			{...props}
 		>
 			<defs>
-				<linearGradient id='myGradientHtml' gradientTransform='rotate(-45)'>
+				<linearGradient id='myGradientHtml' gradientTransform='rotate(0)'>
 					<stop offset='0%' />
 					<stop offset='100%' />
 				</linearGradient>

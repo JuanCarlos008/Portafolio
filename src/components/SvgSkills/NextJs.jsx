@@ -13,7 +13,7 @@ export const NextJs = (props) => {
 			{...props}
 		>
 			<defs>
-				<linearGradient id='myGradientNextJs' gradientTransform='rotate(-45)'>
+				<linearGradient id='myGradientNextJs' gradientTransform='rotate(0)'>
 					<stop offset='0%' />
 					<stop offset='100%' />
 				</linearGradient>

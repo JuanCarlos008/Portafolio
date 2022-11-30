@@ -62,9 +62,9 @@ body {
 			background-color: var(--quertiary-color);
 			width: 100%;
 			background-image: linear-gradient(
-				45deg,
-				var(--quertiary-text-color),
+				90deg,
 				var(--secondary-text-color),
+				var(--quertiary-text-color),
 				var(--primary-text-color)
 			);
 		}

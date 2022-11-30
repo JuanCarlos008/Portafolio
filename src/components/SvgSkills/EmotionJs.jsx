@@ -13,7 +13,7 @@ export const EmotionJs = (props) => {
 			{...props}
 		>
 			<defs>
-				<linearGradient id='myGradientEmotion' gradientTransform='rotate(-45)'>
+				<linearGradient id='myGradientEmotion' gradientTransform='rotate(0)'>
 					<stop offset='0%' />
 					<stop offset='100%' />
 				</linearGradient>

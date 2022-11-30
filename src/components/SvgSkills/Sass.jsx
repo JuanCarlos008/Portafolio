@@ -13,7 +13,7 @@ export const Sass = (props) => {
 			{...props}
 		>
 			<defs>
-				<linearGradient id='myGradientSass' gradientTransform='rotate(-45)'>
+				<linearGradient id='myGradientSass' gradientTransform='rotate(0)'>
 					<stop offset='0%' />
 					<stop offset='100%' />
 				</linearGradient>

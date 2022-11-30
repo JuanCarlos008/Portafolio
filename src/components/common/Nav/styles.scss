@@ -6,7 +6,6 @@
 	transition: background-color 0.3s ease;
 
 	&.isScrolling {
-		// backdrop-filter: blur(10px);
 		background-color: var(--primary-color);
 		border-bottom: 1px solid var(--quertiary-color);
 		.nav {

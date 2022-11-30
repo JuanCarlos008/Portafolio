@@ -13,7 +13,7 @@ export const JavaScript = (props) => {
 			{...props}
 		>
 			<defs>
-				<linearGradient id='myGradientJs' gradientTransform='rotate(-45)'>
+				<linearGradient id='myGradientJs' gradientTransform='rotate(0)'>
 					<stop offset='0%' />
 					<stop offset='100%' />
 				</linearGradient>
