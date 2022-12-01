@@ -65,17 +65,18 @@
 			gap: 5px;
 			padding: 16px;
 			width: 100%;
-			background-image: linear-gradient(
+			background: linear-gradient(
 				to right,
 				var(--tertiary-color),
 				var(--quertiary-color)
 			);
 			border-radius: 5px;
-			color: var(--primary-text-color);
+			color: var(--permanent-text-color);
 			font-size: var(--p-font-size);
 			text-transform: uppercase;
 			margin-top: 10px;
 			transition: all ease 0.3s;
+			font-weight: 600;
 
 			&:hover {
 				transform: scale(0.9);

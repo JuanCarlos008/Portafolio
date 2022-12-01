@@ -128,13 +128,13 @@
 		&__cv {
 			padding: 10px 28px;
 			width: max-content;
-			background-image: linear-gradient(
+			background: linear-gradient(
 				to right,
 				var(--tertiary-color),
 				var(--quertiary-color)
 			);
 			border-radius: 5px;
-			color: var(--primary-text-color);
+			color: var(--permanent-text-color);
 			display: flex;
 			align-items: center;
 			gap: 5px;

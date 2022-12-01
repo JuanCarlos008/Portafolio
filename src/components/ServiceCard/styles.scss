@@ -1,6 +1,7 @@
 .service-card {
 	display: flex;
 	gap: 15px;
+	color: var(--permanent-text-color);
 
 	&__icon {
 		svg {
@@ -9,7 +10,6 @@
 	}
 	&__content {
 		.content-title {
-			color: var(--primary-text-color);
 			line-height: 1;
 			margin-bottom: 10px;
 			font-size: var(--p-font-size);

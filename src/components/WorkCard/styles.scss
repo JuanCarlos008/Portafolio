@@ -130,7 +130,7 @@
 	position: relative;
 	padding: 20px;
 
-	/* &::before,
+	&::before,
 	&::after {
 		content: '';
 		position: absolute;
@@ -156,7 +156,7 @@
 		border-right: 1px solid var(--tertiary-color);
 		border-top: transparent;
 		border-left: transparent;
-	} */
+	}
 
 	.box-info-2 {
 		margin-bottom: 20px;
@@ -177,9 +177,10 @@
 
 			ul {
 				display: flex;
+				flex-wrap: wrap;
 				gap: 10px;
 				li {
-					color: var(--primary-text-color);
+					color: var(--permanent-text-color);
 
 					background: linear-gradient(
 						90deg,
