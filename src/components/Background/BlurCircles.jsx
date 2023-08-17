@@ -1,7 +1,7 @@
-import React from "react";
-import "./styles.scss";
+import React from 'react'
+import './styles.scss'
 
-export const BlurCircles = ({ children, classN }) => {
+export const BlurCircles = ({ children }) => {
 	return (
 		<div className='blur-circler'>
 			{children}
@@ -11,5 +11,5 @@ export const BlurCircles = ({ children, classN }) => {
 				<div className='circle circle--2'></div>
 			</div>
 		</div>
-	);
-};
+	)
+}

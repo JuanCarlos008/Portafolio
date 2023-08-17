@@ -11,13 +11,6 @@ export const NewWorkCard = ({ data }) => {
 						<AiOutlineLink className='icon' /> {data.title}
 					</a>
 				</div>
-				<div className='box-info-2__skills'>
-					<ul>
-						{data.skills.map((skill) => (
-							<li key={skill}>{skill}</li>
-						))}
-					</ul>
-				</div>
 			</div>
 
 			<div className='box-images-2'>

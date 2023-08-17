@@ -1,19 +1,56 @@
 * {
 	box-sizing: border-box;
 }
-html,
+
+/* Works on Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: var(--secondary-color);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+	background: var(--quintary-text-color);
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: var(--secondary-color);
+	border-radius: 20px;
+	border: 1px solid orange;
+}
+
+html {
+	overflow-x: hidden;
+}
+
 body {
+	position: relative;
 	font-family: var(--fontQuickSand);
 	color: var(--primary-text-color);
-	font-size: 16px;
 	background-color: var(--primary-color);
-	scroll-behavior: smooth;
+	font-size: 16px;
+	box-sizing: border-box;
+	scroll-behavior: smooth !important;
+
+	background: linear-gradient(
+				90deg,
+				var(--primary-color) (22px - 1px),
+				transparent 100%
+			)
+			center,
+		linear-gradient(var(--primary-color) (22px - 1px), transparent 100%) center,
+		var(--secondary-color);
+	background-size: 22px 22px;
+
+	overflow-x: hidden;
 }
 
 .app-wrapper {
 	position: relative;
-	width: 100%;
-	overflow-x: hidden;
 }
 
 .disabled {

@@ -1,17 +1,17 @@
 {
-  "name": "portafolio",
+  "name": "english-website",
   "private": true,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy":"npm run build && git add dist -f && git commit -m 'hosting'  && git subtree push --prefix dist origin gh-pages"
+    "deploy": "npm run build && git add dist -f && git commit -m 'hosting'  && git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "react": "18.0.0",
     "react-dom": "18.0.0",
-    "react-icons": "4.4.0"
+    "react-icons": "^4.4.0"
   },
   "devDependencies": {
     "@types/react": "18.0.0",

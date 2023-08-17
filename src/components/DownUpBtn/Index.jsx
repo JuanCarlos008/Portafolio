@@ -4,7 +4,7 @@ import './styles.scss'
 
 export const DownUpBtn = () => {
 	const [isScrolling, setIsScrolling] = useState(false)
-	const [section, setSection] = useState('#sobre-mi')
+	const [section, setSection] = useState('#why?')
 
 	useEffect(() => {
 		window.onscroll = () => {
@@ -13,7 +13,7 @@ export const DownUpBtn = () => {
 				setSection('#inicio')
 			} else {
 				setIsScrolling(false)
-				setSection('#sobre-mi')
+				setSection('#why?')
 			}
 		}
 		return () => (window.onscroll = null)

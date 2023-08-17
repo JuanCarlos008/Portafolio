@@ -6,20 +6,20 @@ import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
 const navPaths = [
 	{
-		path: '#sobre-mi',
-		name: 'sobre mí',
+		path: '#why?',
+		name: 'why?',
 	},
 	{
-		path: '#servicios',
-		name: 'servicios',
+		path: '#roadmap',
+		name: 'roadmap',
 	},
 	{
-		path: '#portafolio',
-		name: 'portafolio',
+		path: '#resources',
+		name: 'resources',
 	},
 	{
-		path: '#contacto',
-		name: 'contacto',
+		path: '#testimonials',
+		name: 'testimonials',
 	},
 ]
 

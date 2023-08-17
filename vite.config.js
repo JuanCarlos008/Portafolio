@@ -4,8 +4,13 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	base: '/Portafolio/',
-	plugins: [react()],
+	base: '/',
+	plugins: [
+		react({
+			fastRefresh: true,
+			include: '**/*.jsx',
+		}),
+	],
 	resolve: {
 		alias: {
 			'@': path.resolve(__dirname, './src'),
@@ -14,3 +19,4 @@ export default defineConfig({
 		},
 	},
 })
+/* english-website/ */
